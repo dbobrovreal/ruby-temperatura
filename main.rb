@@ -1,3 +1,3 @@
-require './lib/application'
+require './src/application'
 
 Application.new.run
