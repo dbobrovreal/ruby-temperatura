@@ -23,4 +23,4 @@ class ErrorHanlder
         true
       end
     end
-  end
+end
