@@ -5,7 +5,7 @@ class ErrorHanlder
       puts 'Invalid value entered (integer or float number)'
       false
     end
-  
+    
     def check_correct_scale(scale)
       if %w[C F K].include? scale
         true
