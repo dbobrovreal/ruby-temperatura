@@ -11,16 +11,13 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Layout/EndOfLine:
-  Enabled: false
+    EnforcedStyle: crlf
 
 Metrics/MethodLength:
   Max: 30
 
 Metrics/AbcSize:
   Max: 45
-
-Style/EndOfLine:
- EnforcedStyle: crlf
 
 Metrics/BlockLength:
   Exclude:
