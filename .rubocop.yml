@@ -10,9 +10,6 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-Layout/EndOfLine:
-    EnforcedStyle: crlf
-
 Metrics/MethodLength:
   Max: 30
 
