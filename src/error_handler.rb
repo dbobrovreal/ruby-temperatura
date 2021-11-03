@@ -7,10 +7,10 @@ class ErrorHanlder
   end
 
   def check_correct_scale(scale)
-    if %w[C F K].include? scale
+    if %w[C F K R].include? scale
       true
     else
-      puts 'Была введена неправильная шкала ("F", "C" или "K")'
+      puts 'Была введена неправильная шкала ("F", "C", "K", "R")'
       false
     end
   end

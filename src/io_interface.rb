@@ -6,7 +6,7 @@ class IOInterface
   end
 
   def input_source_scale
-    puts 'Введите измерительную систему температуры? ("F", "C", "K")'
+    puts 'Введите измерительную систему температуры? ("F", "C", "K", "R")'
     source_scale = gets.chomp
 
     if @error_handler.check_correct_scale(source_scale)
