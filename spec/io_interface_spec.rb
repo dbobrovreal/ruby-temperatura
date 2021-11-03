@@ -18,6 +18,11 @@ RSpec.describe IOInterface do
     it { is_expected.to eq 'F' }
   end
 
+  describe '#check_exit' do
+    subject { IOInterface.new.check_exit }
+    it { is_expected.to eq true }
+  end
+
   describe '#output_result' do
     subject { IOInterface.new.output_result(10) }
     it { is_expected.to eq nil }

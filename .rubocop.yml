@@ -11,10 +11,10 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Metrics/MethodLength:
-  Max: 30
+  Max: 20
 
 Metrics/AbcSize:
-  Max: 45
+  Max: 25
 
 Metrics/BlockLength:
   Exclude:
