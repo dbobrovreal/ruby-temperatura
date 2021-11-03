@@ -26,5 +26,20 @@ RSpec.describe Temperature do
       subject { Temperature.new('K', 'F', 10).converter }
       it { is_expected.to eq(-441.67) }
     end
+
+    context 'Из C конвентирую в R' do
+      subject { Temperature.new('C', 'R', 15).converter }
+      it { is_expected.to eq 12 }
+    end
+
+    context 'Из F конвентирую в R' do
+      subject { Temperature.new('F', 'R', 56).converter }
+      it { is_expected.to eq 10.8 }
+    end
+
+    context 'Из R конвентирую в K' do
+      subject { Temperature.new('R', 'K', 10).converter }
+      it { is_expected.to eq 285.65 }
+    end
   end
 end
