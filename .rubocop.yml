@@ -21,3 +21,7 @@ Metrics/AbcSize:
 
 Style/EndOfLine:
  EnforcedStyle: crlf
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*_spec.rb"
