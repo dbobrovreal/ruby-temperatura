@@ -3,11 +3,14 @@ AllCops:
 
 Style/AndOr:
   Enabled: false
-
+  
 Style/Documentation:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/EndOfLine:
   Enabled: false
 
 Metrics/MethodLength:
@@ -15,9 +18,6 @@ Metrics/MethodLength:
 
 Metrics/AbcSize:
   Max: 25
-  
+
 Style/EndOfLine:
-  EnforcedStyle: lf
-  
-Layout/EndOfLine:
-   Enabled: False
+ EnforcedStyle: crlf

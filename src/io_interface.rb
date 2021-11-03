@@ -6,7 +6,7 @@ class IOInterface
   end
 
   def input_source_scale
-    puts 'Enter the source scale ("F", "C" or "K"):'
+    puts 'Введите измерительную систему температуры? ("F", "C", "K")'
     source_scale = gets.chomp
 
     if @error_handler.check_correct_scale(source_scale)
@@ -17,7 +17,7 @@ class IOInterface
   end
 
   def input_target_scale(source_scale)
-    puts 'Enter the target scale:'
+    puts 'В какую измерительную систему посчитать?'
     target_scale = gets.chomp
 
     if  @error_handler.check_correct_scale(target_scale) &&
@@ -29,7 +29,7 @@ class IOInterface
   end
 
   def input_value
-    puts 'Enter a value:'
+    puts 'Введите значение:'
     value = gets
 
     if @error_handler.check_value(value)
@@ -40,17 +40,17 @@ class IOInterface
   end
 
   def output_result(result)
-    puts "Result = #{result}"
+    puts "Результат = #{result}"
   end
 
   def check_exit
-    puts 'To exit, enter "stop" or "next" to continue'
+    puts 'Продолжить или остановиться? (Y/N)'
     state = gets.chomp
 
     case state
-    when 'stop'
-      abort 'See you soon!'
-    when 'next'
+    when 'N'
+      abort 'До скорой встречи!'
+    when 'Y'
       true
     else
       check_exit
