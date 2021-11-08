@@ -17,7 +17,5 @@ jobs:
           bundle install
       - name: Rubocop
         run: bundle exec rubocop
-      - name: Type Checking
-        run: bundle exec steep check
       - name: RSpec
         run: bundle exec rspec
